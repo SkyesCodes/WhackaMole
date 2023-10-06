@@ -1,9 +1,7 @@
 
-# This is a Whack a mole style game. 
-
-## The win condition will be score related over one minute. The win condition score will be decided after it is functioning for balancing reasons. 
+# This is a Whack a mole style game.  
 ---
-It will be made using html, css, js, dom.
+### It will be made using html, css, js, dom.
 ---
 * Main goals (MVP) include:
     - render a game board with 9 circles that can be clicked on
