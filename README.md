@@ -16,4 +16,4 @@ It will be made using html, css, js, dom.
    - an instance based highscore tracker
    - a harder difficulty (less time to successfully click circles)
 ---
-![Wireframe1](https://imgur.com/a/0qrl4qd)
+![Wireframe1](https://imgur.com/rj0qyLD.)
