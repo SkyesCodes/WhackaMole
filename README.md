@@ -6,10 +6,10 @@
 It will be made using html, css, js, dom.
 ---
 * Main goals include:
-    - a fully functioning whack a mole style game, 
-    - a score counter, 
-    - play again button/start button,  
-    - a win/lose screen/message.
+    - a fully functioning whack a mole style game 
+    - a score counter 
+    - play again button/start button  
+    - a win/lose screen/message
 ---
 * Stretch goals include: 
    - upgrading the visuals
