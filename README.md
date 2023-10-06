@@ -1,7 +1,7 @@
 
-# H1 **This is a Whack a mole style game. The circles will be active at random intervals over 1 minute, clicking them within a second of being active will reward points.**
+# This is a Whack a mole style game. The circles will be active at random intervals over 1 minute, clicking them within a second of being active will reward points.
 
-## H2 The win condition be score related over that minute. The win condition score will be decided after it is functioning for balancing reasons. 
+## The win condition be score related over that minute. The win condition score will be decided after it is functioning for balancing reasons. 
 ---
 It will be made using html, css, js, dom.
 ---
