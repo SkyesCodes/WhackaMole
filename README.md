@@ -1,7 +1,9 @@
 
 # This is a Whack a mole style game.  
 ---
-### It will be made using html, css, js, dom.
+### This game will be a test of your reactions, how many circles can you click as they become active over one minute? 
+---
+#### It will be made using html, css, js, dom.
 ---
 * Main goals (MVP) include:
     - render a game board with 9 circles that can be clicked on
@@ -17,7 +19,13 @@
 ---
 * Stretch goals include: 
    - upgrading the visuals
+   - sound effects
    - an instance based highscore tracker
    - a harder difficulty (less time to successfully click circles)
 ---
+* Potential roadblocks
+    - circles being chosen at random back to back, could be confusing to the players
+    - overall responsiveness of circles becoming inactive on click
+    - on click functionality 
+    - performance on different devices/screens
 ![Wireframe1](https://imgur.com/rj0qyLD.jpg)
