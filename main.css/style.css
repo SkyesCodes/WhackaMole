@@ -12,6 +12,8 @@ body{
     width: 700px;
     height: 500px;
     align-self: baseline;
+    margin-left: 550px;
+    margin-top: 200px;
 }
 div {
     margin: 0;
@@ -25,16 +27,18 @@ div {
     background-color: rgb(139, 20, 20);
     padding: 1px;
     margin: 0;
+    margin-left: 60px;
 }
 header{
     display: inline-flex;
     font-size: x-large;
     justify-self: center;
     padding: 20px;
-    margin-left: 60px;
+    margin-left: 50px;
     
 }
 p{
     background-color: aqua;
+    border: solid black 2px;
     
 }
