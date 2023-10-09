@@ -1,44 +1,66 @@
 * {
     box-sizing: border-box;}
 body{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border: solid black 2px;
-    border-radius: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: blueviolet;
+    background-size: cover;
+}
+#gameboard {
     width: 700px;
-    height: 500px;
-    align-self: baseline;
-    margin-left: 550px;
-    margin-top: 200px;
-}
-div {
-    margin: 0;
-    display: flex grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    height: 700px;
+    background-color: rgb(128, 0, 0);
     border: solid black 2px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+ #gameboard div{
+    width: 180px;
+    height: 180px;
+    background-color: chartreuse;
+ 
+   
+    border: solid white 1px;
+    display: flexbox;
+    margin: 0 auto;
+    margin-top: 30px;
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
-    background-color: rgb(139, 20, 20);
-    padding: 1px;
-    margin: 0;
-    margin-left: 60px;
-}
-header{
-    display: inline-flex;
-    font-size: x-large;
-    justify-self: center;
-    padding: 20px;
-    margin-left: 50px;
-    
-}
-p{
-    background-color: aqua;
-    border: solid black 2px;
-    
-}
+ }
+ #gameboard div img {
+    height: 100px;
+    width: 100px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
