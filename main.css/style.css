@@ -3,8 +3,10 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color: blueviolet;
+    background-image: url("https://imgur.com/qjENCem.jpg");
     background-size: cover;
+    background-position: center;
+    
 }
 #gameboard {
     width: 700px;
