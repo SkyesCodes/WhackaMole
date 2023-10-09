@@ -9,7 +9,8 @@ body{
 #gameboard {
     width: 700px;
     height: 700px;
-    background-color: rgb(128, 0, 0);
+    background-image: url("https://imgur.com/Pr6Q79f.jpg");
+    background-position: center;
     border: solid black 2px;
     margin: 0 auto;
     display: flex;
@@ -21,8 +22,8 @@ body{
     background-image: url("https://imgur.com/QcAGbxw.jpg");
     background-size: cover;
    background-position: center;
-   background-position-y:bottom ;
-    border: solid white 1px;
+   background-position-y: bottom ;
+    border: transparent;
     display: flexbox;
     margin: 0 auto;
     margin-top: 30px;
