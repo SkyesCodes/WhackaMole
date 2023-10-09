@@ -18,9 +18,10 @@ body{
  #gameboard div{
     width: 180px;
     height: 180px;
-    background-color: chartreuse;
- 
-   
+    background-image: url("https://imgur.com/QcAGbxw.jpg");
+    background-size: cover;
+   background-position: center;
+   background-position-y:bottom ;
     border: solid white 1px;
     display: flexbox;
     margin: 0 auto;
