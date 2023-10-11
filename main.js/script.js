@@ -15,13 +15,16 @@ function renderGame(){
     tile.id = i.toString();
     document.getElementById("gameboard").appendChild(tile);
     tile.addEventListener("click", clickedTile);
-    
     }
-
+    if (gameOver===true){
+        return;
+}
+    }
     setInterval(activateTile, 1000);
     setInterval(setTimer, 1000);
-    setTimeout(endGame, 12000);
-}
+    setTimeout(endGame, 10000);
+   
+    
 
 //Hides button
 function noButton(){if (gameOver === false){
@@ -37,7 +40,8 @@ function randomTile(){
 
 //place mole on randomly chosen tile
 function activateTile() {
-
+    if (gameOver===true)
+        return;
     if (activeTile) {
     activeTile.innerHTML = "";
     }
@@ -49,7 +53,9 @@ function activateTile() {
     let num = randomTile();
     activeTile = document.getElementById(num);
     activeTile.appendChild(mole);
-}   
+    
+    }
+  
 
 //generate points when mole clicked, lose points if you miss
 function clickedTile(){
@@ -65,22 +71,51 @@ function clickedTile(){
 
 //display timer on screen
 function setTimer(){
+    if (gameOver===false){
+        document.getElementById("timer").style.visibility = "visible";
     timer += 1;
-    document.getElementById("timer").innerText= "TIMER: " + timer.toString() + "s";
+    document.getElementById("timer").innerText= "TIMER: " + timer.toString() + "s";}
+    if (gameOver===true){
+     document.getElementById("timer").style.visibility = "hidden";
+     timer=0;}
 }
 
 // Game over screen 
 
 function endGame() {
-   document.querySelector(gameOver)!= gameOver;
-     if(gameOver === "true"){
+   gameOver = true;
+     if(gameOver === true){
+       activeTile.innerHTML = "";
+      document.getElementById("topM").innerText = "GAME OVER";
       document.getElementById("playButton").style.visibility = "visible";
-      document.getElementById("playButton").addEventListener("click", renderGame());
-      document.getElementById("timer").innerText = 0; 
-      document.getElementById("score").innerText = 0;
+      document.getElementById("playButton").addEventListener("click", reverseGame);
+      document.getElementById("playButton").addEventListener("click", noButton);
+      document.getElementById("playButton").addEventListener("click", resetGamestate);
+      document.getElementById("playButton").addEventListener("click", resetTop);
+      document.getElementById("playButton").addEventListener("click", resetScore);
      }   
     }
 
-//win condition
+//reverse gameOver
+function reverseGame (){
+    gameOver = false;
+}
+//reset the score
+function resetScore(){
+    document.getElementById("score").innerHTML= 0;
+}
 
+//reset the title
+function resetTop(){
+    document.getElementById("topM").innerText = "Whack a Mole";
+}
+
+//function reset gamestate timer//
+function resetGamestate(){
+setTimeout(endGame, 10000)
+}
+
+//win condition
+// place in endGame function
+//if (score >= 400){document.createElement("h4")}
 
