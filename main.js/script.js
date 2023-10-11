@@ -22,7 +22,7 @@ function renderGame(){
     }
     setInterval(activateTile, 1000);
     setInterval(setTimer, 1000);
-    setTimeout(endGame, 10000);
+    setTimeout(endGame, 45000);
    
     
 
@@ -112,7 +112,7 @@ function resetTop(){
 
 //function reset gamestate timer//
 function resetGamestate(){
-setTimeout(endGame, 10000)
+setTimeout(endGame, 45000)
 }
 
 //win condition
