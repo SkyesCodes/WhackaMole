@@ -3,7 +3,8 @@ let activeTile;
 let score = 0;
 let gameOver = false;
 let timer = 0 ;
-// win condition after testing 400pts.
+
+// win condition after testing: 400pts.
 
 //render board
 window.onload = function() {
@@ -15,10 +16,14 @@ function renderGame(){
     tile.id = i.toString();
     document.getElementById("gameboard").appendChild(tile);
     tile.addEventListener("click", clickedTile);
+    
     }
     if (gameOver===true){
         return;
 }
+    if (gameOver===false){
+        document.getElementById("winner").style.visibility="hidden"
+    }
     }
     setInterval(activateTile, 1000);
     setInterval(setTimer, 1000);
@@ -67,6 +72,7 @@ function clickedTile(){
         score -= 10;
         document.getElementById("score").innerHTML=score.toString();
     }
+
 }
 
 //display timer on screen
@@ -85,6 +91,7 @@ function setTimer(){
 function endGame() {
    gameOver = true;
      if(gameOver === true){
+        
        activeTile.innerHTML = "";
       document.getElementById("topM").innerText = "GAME OVER";
       document.getElementById("playButton").style.visibility = "visible";
@@ -93,8 +100,11 @@ function endGame() {
       document.getElementById("playButton").addEventListener("click", resetGamestate);
       document.getElementById("playButton").addEventListener("click", resetTop);
       document.getElementById("playButton").addEventListener("click", resetScore);
+      document.getElementById("playButton").addEventListener("click", hideWin);
+      showWin();
+    } 
      }   
-    }
+    
 
 //reverse gameOver
 function reverseGame (){
@@ -102,7 +112,11 @@ function reverseGame (){
 }
 //reset the score
 function resetScore(){
-    document.getElementById("score").innerHTML= 0;
+    score = 0;
+    document.getElementById("score").innerHTML= score;
+    
+    
+
 }
 
 //reset the title
@@ -116,6 +130,20 @@ setTimeout(endGame, 45000)
 }
 
 //win condition
-// place in endGame function
-//if (score >= 400){document.createElement("h4")}
+// placed in endGame function
+
+//hide win condition message
+function hideWin(){
+    document.getElementById("winner").style.visibility = "hidden";
+}
+
+
+//show win message
+function showWin(){
+let numScore = (score*1);
+   if ( numScore >= 400){
+    document.getElementById("winner").style.visibility = "visible";
+   }
+}
+
 
