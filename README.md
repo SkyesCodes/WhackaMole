@@ -29,3 +29,5 @@
     - on click functionality 
     - performance on different devices/screens
 ![Wireframe1](https://imgur.com/rj0qyLD.jpg)
+---
+link to finished game: https://skyescodes.github.io/WhackaMole/ 
