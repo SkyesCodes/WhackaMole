@@ -58,8 +58,7 @@ function activateTile() {
     let num = randomTile();
     activeTile = document.getElementById(num);
     activeTile.appendChild(mole);
-    
-    }
+}
   
 
 //generate points when mole clicked, lose points if you miss
@@ -114,9 +113,6 @@ function reverseGame (){
 function resetScore(){
     score = 0;
     document.getElementById("score").innerHTML= score;
-    
-    
-
 }
 
 //reset the title
@@ -126,7 +122,7 @@ function resetTop(){
 
 //function reset gamestate timer//
 function resetGamestate(){
-setTimeout(endGame, 45000)
+    setTimeout(endGame, 45000)
 }
 
 //win condition
@@ -140,9 +136,9 @@ function hideWin(){
 
 //show win message
 function showWin(){
-let numScore = (score*1);
-   if ( numScore >= 400){
-    document.getElementById("winner").style.visibility = "visible";
+    let numScore = (score*1);
+    if ( numScore >= 400){
+        document.getElementById("winner").style.visibility = "visible";
    }
    if(numScore >= 780){
     document.getElementById("winner").innerHTML = "WOW! YOU WON!"
