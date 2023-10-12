@@ -145,11 +145,12 @@ let numScore = (score*1);
     document.getElementById("winner").style.visibility = "visible";
    }
    if(numScore >= 780){
-    document.getElementById("winner").innerHTML = "WOW! YOU WON! Touch Grass"
+    document.getElementById("winner").innerHTML = "WOW! YOU WON!"
    }
    if(numScore >= 970){
-    document.getElementById("winner").innerHTML = "Seriously? you sweaty for this."
+    document.getElementById("winner").innerHTML = "Seriously? Well Done!"
    }
 }
+
 
 
