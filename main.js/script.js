@@ -144,6 +144,12 @@ let numScore = (score*1);
    if ( numScore >= 400){
     document.getElementById("winner").style.visibility = "visible";
    }
+   if(numScore >= 780){
+    document.getElementById("winner").innerHTML = "WOW! YOU WON! Touch Grass"
+   }
+   if(numScore >= 970){
+    document.getElementById("winner").innerHTML = "Seriously? you sweaty for this."
+   }
 }
 
 
