@@ -52,8 +52,8 @@ function activateTile() {
     }
 
     let mole = document.createElement("img");
-    mole.src = "https://imgur.com/Zx1QMtQ.png";
-    
+    mole.src = "https://imgur.com/oPFyV8D.png";
+
 
     let num = randomTile();
     activeTile = document.getElementById(num);
