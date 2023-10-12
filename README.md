@@ -1,7 +1,14 @@
-
-# This is a Whack a mole style game.  
+# Whack a Mole! Moles have invaded the backyard, and its up to you to stop them!
 ---
-### This game will be a test of your reactions, how many circles can you click as they become active over one minute? 
+![Screenshot](https://imgur.com/Nvx4An3.png)
+---
+## HTML, CSS, JS, and DOM elements are used to power this game.
+---
+## Instructions: Click the moles as fast as you can to score points. You may click the mole as many times as you would like, but if you click when there is no mole you will lose points! 400pts wins the game. Play it here: https://skyescodes.github.io/WhackaMole/
+---
+### See planning materials below.  
+---
+#### This game will be a test of your reactions, how many circles can you click as they become active over one minute? 
 ---
 #### It will be made using html, css, js, dom.
 ---
@@ -30,4 +37,3 @@
     - performance on different devices/screens
 ![Wireframe1](https://imgur.com/rj0qyLD.jpg)
 ---
-link to finished game: https://skyescodes.github.io/WhackaMole/ 
